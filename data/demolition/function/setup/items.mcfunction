@@ -16,3 +16,4 @@ clear @a *[custom_data~{demolition:{setup:true}}]
 loot give @s loot demolition:summon_lobby
 loot give @s loot demolition:summon_p1_arena
 loot give @s loot demolition:summon_p2_arena
+loot give @s loot demolition:summon_joint_arena

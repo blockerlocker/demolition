@@ -3,7 +3,9 @@ For Minecraft 26.4
 Demolition is a mini-game inspired by the classic board game Battleship. Each team of players has to build a structure on a grid. Then when the game begins, teams take turn guessing where to drop massive blocks of TNT on the grid in order to explode the other team's build. Whoever can fully demolish the enemy's build first wins!
 
 ## Setup
-Before the game can be played, an operator has to enter Setup Mode, and place down the Lobby, Player 1 Arena, and Player 2 Arena. These structures are meant to be spawned in far apart from each other, so as to avoid cheating during play (ie; so that players on Team 1 can't peek over the wall to see Team 2's build.)
+Before the game can be played, an operator has to enter Setup Mode, and place down the Lobby, Player 1 Arena, and Player 2 Arena. These structures are meant to be placed very far apart from each other, so as to avoid cheating during play (ie; so that players on Team 1 can't peek over the wall to see Team 2's build.)
+
+If you'd like the arenas to be connected instead, place the Joint Arena instead of placing the Player 1 and Player 2 Arenas separately.
 
 | Command | Description |
 | --- | --- |

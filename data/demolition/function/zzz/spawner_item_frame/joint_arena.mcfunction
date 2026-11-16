@@ -1,0 +1,2 @@
+function demolition:zzz/spawner_item_frame/p1_arena
+function demolition:zzz/spawner_item_frame/p2_arena
