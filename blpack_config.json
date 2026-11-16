@@ -2,9 +2,5 @@
     "version": "latest-snapshot",
     "data/get": [
         "marker_pos"
-    ],
-    "data/block_in_volume": {
-        "volume_input": "21x12x27",
-        "block_id_input": "#demolition:unblastable"
-    }
+    ]
 }
