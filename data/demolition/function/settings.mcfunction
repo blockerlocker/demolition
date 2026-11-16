@@ -1,0 +1,3 @@
+execute if data storage demolition:state {current_state:active,game_phase:demolition} run return run function demolition:zzz/notif/chat_yellow {text:'{text:"Can\'t change building rules mid-game! Run ",color:yellow},{text:"/function demolition:end_game",color:green,click_event:{action:run_command,command:"/function demolition:end_game"}},{text:" to end the game early.",color:yellow}'}
+
+function demolition:zzz/config_macro with storage demolition:settings

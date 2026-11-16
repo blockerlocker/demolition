@@ -1,0 +1,1 @@
+execute at @n[type=marker,tag=demolition_lobby] positioned ~ ~15 ~ run tp @s ~ ~ ~ 0 45

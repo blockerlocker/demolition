@@ -1,0 +1,8 @@
+execute if data storage demolition:state {current_state:setup} run return run function demolition:zzz/notif/chat_yellow {text:'{text:"Cannot start game while in setup mode! Run ",color:yellow},{text:"/function demolition:setup/end",color:green,click_event:{action:run_command,command:"/function demolition:setup/end"}},{text:" to end setup, and then pick your teams!",color:yellow}'}
+execute if data storage demolition:state {current_state:active} run return run function demolition:zzz/notif/chat_yellow {text:'{text:"You can\'t start the game when it\'s already active! Maybe you meant to run ",color:yellow},{text:"/function demolition:end_game",color:green,click_event:{action:run_command,command:"/function demolition:end_game"}},{text:" to end the game early?",color:yellow}'}
+execute unless data storage demolition:state {current_state:lobby} run return run function demolition:zzz/notif/chat_yellow {text:'{text:"You must be in the lobby to start the game! Run ",color:yellow},{text:"/function demolition:pick_teams",color:green,click_event:{action:run_command,command:"/function demolition:pick_teams"}},{text:" to go to the lobby!",color:yellow}'}
+
+execute unless entity @a[team=demolition_team_1] run return run function demolition:zzz/notif/chat_yellow {text:'{text:"Each team needs at least one player to start the game!",color:yellow}'}
+execute unless entity @a[team=demolition_team_2] run return run function demolition:zzz/notif/chat_yellow {text:'{text:"Each team needs at least one player to start the game!",color:yellow}'}
+
+function demolition:zzz/game/building/begin

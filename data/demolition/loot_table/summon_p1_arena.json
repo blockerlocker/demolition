@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "demolition:spawner_item_frame",
+                    "modifier": {
+                        "type": "set_components",
+                        "components": {
+                            "item_name": "Summon P1 Arena",
+                            "item_model": "red_candle",
+                            "custom_data": {
+                                "demolition": {
+                                    "summon": "p1",
+                                    "setup": true
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

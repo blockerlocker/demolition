@@ -1,0 +1,2 @@
+execute on target if entity @s[team=demolition_team_1] run function demolition:zzz/game/building/p1_ready with storage demolition:data
+execute on target if entity @s[team=demolition_team_2] run function demolition:zzz/game/building/p2_ready with storage demolition:data

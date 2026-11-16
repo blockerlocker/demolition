@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "interaction_use": {
+            "trigger": "player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "entity_type": "interaction",
+                        "entity_tags": {
+                            "all_of": [
+                                "demolition_button"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "demolition:zzz/panel/button/use"
+    }
+}

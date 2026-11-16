@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "value": "demolition:spawner_item_frame",
+                    "modifier": {
+                        "type": "set_components",
+                        "components": {
+                            "item_name": "Summon Lobby",
+                            "item_model": "daylight_detector",
+                            "custom_data": {
+                                "demolition": {
+                                    "summon": "lobby",
+                                    "setup": true
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

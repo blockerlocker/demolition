@@ -1,0 +1,24 @@
+{
+    "values": [
+        "minecraft:infested_stone",
+        "minecraft:infested_cobblestone",
+        "minecraft:infested_stone_bricks",
+        "minecraft:infested_mossy_stone_bricks",
+        "minecraft:infested_cracked_stone_bricks",
+        "minecraft:infested_chiseled_stone_bricks",
+        "minecraft:calcite",
+        "minecraft:calcite_pillar",
+        "minecraft:calcite_slab",
+        "minecraft:calcite_stairs",
+        "minecraft:calcite_wall",
+        "minecraft:polished_calcite",
+        "minecraft:polished_calcite_slab",
+        "minecraft:polished_calcite_stairs",
+        "minecraft:polished_calcite_wall",
+        "minecraft:polished_calcite_bricks",
+        "minecraft:polished_calcite_brick_slab",
+        "minecraft:polished_calcite_brick_stairs",
+        "minecraft:polished_calcite_brick_wall",
+        "minecraft:infested_deepslate"
+    ]
+}

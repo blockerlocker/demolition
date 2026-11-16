@@ -1,0 +1,1 @@
+execute at @n[type=marker,tag=demolition_p2_cell,nbt={data:{demolition:{cell:[g,5]}}}] run tp @s ~-2 ~10 ~ -90 30

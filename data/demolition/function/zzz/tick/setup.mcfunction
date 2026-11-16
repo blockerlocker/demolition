@@ -1,0 +1,1 @@
+execute as @e[type=glow_item_frame,predicate=demolition:spawner_item_frame] at @s run function demolition:zzz/spawner_item_frame/main

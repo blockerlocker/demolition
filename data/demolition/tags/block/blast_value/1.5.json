@@ -1,0 +1,18 @@
+{
+    "values": [
+        "minecraft:sticky_piston",
+        "minecraft:piston",
+        "minecraft:piston_head",
+        "minecraft:bookshelf",
+        "minecraft:chiseled_bookshelf",
+        "minecraft:amethyst_block",
+        "minecraft:ice_crystal",
+        "minecraft:budding_amethyst",
+        "minecraft:amethyst_cluster",
+        "minecraft:large_amethyst_bud",
+        "minecraft:medium_amethyst_bud",
+        "minecraft:small_amethyst_bud",
+        "minecraft:sculk_sensor",
+        "minecraft:calibrated_sculk_sensor"
+    ]
+}

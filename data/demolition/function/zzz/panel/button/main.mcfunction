@@ -1,0 +1,2 @@
+execute if data storage demolition:state {current_state:active,game_phase:building} run function demolition:zzz/game/building/panel
+execute if data storage demolition:state {current_state:active,game_phase:demolition} run function demolition:zzz/game/demolition/panel
