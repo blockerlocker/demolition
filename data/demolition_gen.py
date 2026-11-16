@@ -71,9 +71,9 @@ block_count = {
     "inputs": []
 }
 
-for x in range(0,20):
-    for y in range(0,11):
-        for z in range(0,26):
+for x in range(0,21):
+    for y in range(0,12):
+        for z in range(0,27):
             block_count["inputs"].append({
                 "type": "conditional",
                 "condition": {
@@ -90,6 +90,8 @@ for x in range(0,20):
                 "on_true": 0,
                 "on_false": 1
             })
+
+            print(f"{x}  {y}  {z}")
             
             for blast_value in blast_tags:
                 total_blast_resistance["inputs"].append({

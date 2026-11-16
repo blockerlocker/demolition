@@ -17,7 +17,7 @@ advancement revoke @a only demolition:interaction_attack
 advancement revoke @a only demolition:interaction_use
 
 execute unless data storage demolition:settings blast_limit run data merge storage demolition:settings {\
-    blast_limit: 750,\
+    blast_limit: 500,\
     block_limit: 250,\
     cell_limit: 32\
 }
