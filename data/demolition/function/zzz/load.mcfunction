@@ -5,6 +5,7 @@ gamerule advance_time false
 gamerule advance_weather false
 gamerule block_drops false
 gamerule mob_drops false
+gamerule locator_bar false
 
 gamerule send_command_feedback false
 
