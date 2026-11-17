@@ -41,6 +41,6 @@ Once one team has entirely destroyed the other team's build, the game ends, and 
 
 | Command | Description |
 | --- | --- |
-| `/function demolition:teleport/lobby` | Teleport to Lobby, where the original, undamaged builds are stored. |
-| `/function demolition:teleport/p1_arena` | Teleport to Player 1's Arena to see the damage to their build. |
-| `/function demolition:teleport/p2_arena` | Teleport to Player 2's Arena to see the damage to their build. |
+| `/function demolition:teleport/lobby` | Teleport all players to Lobby, where the original, undamaged builds are stored. |
+| `/function demolition:teleport/p1_arena` | Teleport all players to Player 1's Arena to see the damage to their build. |
+| `/function demolition:teleport/p2_arena` | Teleport all players to Player 2's Arena to see the damage to their build. |
