@@ -4,3 +4,5 @@ execute if data storage demolition:state {current_state:active} run function dem
 
 kill @e[type=glow_item_frame,predicate=demolition:spawner_item_frame]
 data remove storage demolition:temp all
+execute as @e[type=#demolition:disallowed] run data merge entity @s {Health:0,DeathTime:20}
+kill @e[type=#demolition:disallowed]

@@ -6,8 +6,10 @@ gamerule advance_weather false
 gamerule block_drops false
 gamerule mob_drops false
 gamerule locator_bar false
+gamerule show_advancement_messages false
+gamerule random_tick_speed 0
 
-gamerule send_command_feedback false
+###gamerule send_command_feedback false
 
 team add demolition_team_1
 team add demolition_team_2
@@ -18,8 +20,8 @@ advancement revoke @a only demolition:interaction_attack
 advancement revoke @a only demolition:interaction_use
 
 execute unless data storage demolition:settings blast_limit run data merge storage demolition:settings {\
-    blast_limit: 500,\
-    block_limit: 250,\
+    blast_limit: 400,\
+    block_limit: 200,\
     cell_limit: 32\
 }
 

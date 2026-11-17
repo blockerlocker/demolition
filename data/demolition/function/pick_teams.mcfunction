@@ -17,5 +17,6 @@ execute as @a at @s run playsound block.note_block.pling master @s ~ ~ ~ 2 2
 tellraw @a ["\n",{player:blockerlocker},{text:" > Time to pick a side! Once everyone is ready, run ",color:yellow},{text:"/function demolition:start_game",color:green,click_event:{action:run_command,command:"/function demolition:start_game"}},{text:" to play!",color:yellow}]
 
 function demolition:zzz/reset/clear_arena with storage demolition:data
+function demolition:zzz/reset/hud_block_count with storage demolition:data
 
 data merge storage demolition:state {current_state:lobby}

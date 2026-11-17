@@ -1,0 +1,2 @@
+execute as @e[type=text_display,tag=demolition_block_count] run data modify entity @s text.extra[1] set value {storage:"demolition:demolition",nbt:"all.p1_blocks"}
+execute as @e[type=text_display,tag=demolition_block_count] run data modify entity @s text.extra[3] set value {storage:"demolition:demolition",nbt:"all.p2_blocks"}

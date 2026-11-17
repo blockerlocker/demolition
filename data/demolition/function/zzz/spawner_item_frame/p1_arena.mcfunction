@@ -18,3 +18,6 @@ execute store result storage demolition:data p1_build_plate_y int 1 run data get
 execute store result storage demolition:data p1_build_plate_z int 1 run data get storage blpack:get all.pos[2]
 
 execute align xyz positioned ~3 ~3 ~17.5 rotated -90 0 run function demolition:zzz/panel/create {player:p1}
+
+execute align xyz positioned ~3 ~6 ~27 rotated -90 0 summon text_display run function demolition:zzz/hud/p1_team_id
+execute align xyz positioned ~3 ~5.5 ~7.5 rotated -90 0 summon text_display run function demolition:zzz/hud/block_count {player:p1}

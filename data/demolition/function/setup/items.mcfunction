@@ -7,6 +7,8 @@ tellraw @a ["",\
     {text:"\n  This will spawn the Eastern side of the arena for Player 1. To prevent cheating, you should place it pretty far away from Player 2's arena.",color:yellow},\
     {text:"\n\nSummon P2 Arena:",color:yellow,underlined:true},\
     {text:"\n  This will spawn the Western side of the arena for Player 2. To prevent cheating, you should place it pretty far away from Player 1's arena.",color:yellow},\
+    {text:"\n\nSummon Joint Arena:",color:yellow,underlined:true},\
+    {text:"\n  Spawns the P1 Arena and P2 Arena connected instead of separate.",color:yellow},\
     "\n\n",\
     "\n",{player:blockerlocker},\
     {text:" > To play, each of the above items needs to be placed down.",color:aqua},\

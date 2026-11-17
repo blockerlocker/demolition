@@ -1,6 +1,6 @@
 function demolition:zzz/game/demolition/block_count with storage demolition:data
-data modify storage demolition:demolition all.p1_pre_explode set from storage demolition:temp all.p1_blocks
-data modify storage demolition:demolition all.p2_pre_explode set from storage demolition:temp all.p2_blocks
+data modify storage demolition:demolition all.p1_pre_explode set from storage demolition:demolition all.p1_blocks
+data modify storage demolition:demolition all.p2_pre_explode set from storage demolition:demolition all.p2_blocks
 
 $execute at @n[type=marker,tag=demolition_$(receiver)_cell,nbt={data:{demolition:{cell:$(target_cell)}}}] positioned ~ ~45 ~ run function demolition:zzz/game/demolition/tnt/real
 

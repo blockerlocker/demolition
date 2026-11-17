@@ -7,6 +7,7 @@ fill ~-31 ~-1 ~ ~2 ~-1 ~34 grass_block
 kill @e[type=text_display,tag=demolition_p2_text]
 kill @e[type=marker,tag=demolition_p2_cell]
 kill @e[tag=demolition_p2_panel]
+kill @e[tag=demolition_p2_hud]
 
 forceload remove ~-31 ~ ~2 ~34
 

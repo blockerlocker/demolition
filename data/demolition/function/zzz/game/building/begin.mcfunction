@@ -20,6 +20,7 @@ gamemode creative @a[tag=demolition_active_player]
 effect clear @a
 
 function demolition:zzz/reset/panel_icons
+function demolition:zzz/reset/hud_block_count
 
 data remove storage demolition:building all
 data merge storage demolition:building {all:{p1_blast:0.0f,p1_blocks:0,p1_cells:0,p2_blast:0.0f,p2_blocks:0,p2_cells:0}}

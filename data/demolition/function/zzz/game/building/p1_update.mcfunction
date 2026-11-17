@@ -28,6 +28,11 @@ execute if predicate {type:any_of,terms:["demolition:build/p1_exceed_blast","dem
 
 # Warn players if they have an illegal block in their build
 execute if predicate demolition:build/has_unblastable_block as @a[team=demolition_team_1] at @s run function demolition:zzz/notif/actionbar_red {text:"You cannot have un-blastable blocks in your build!"}
+execute if predicate demolition:build/has_waterlogged_block as @a[team=demolition_team_1] at @s run function demolition:zzz/notif/actionbar_red {text:"You cannot have waterlogged blocks in your build!"}
 
 # Update cached build
 $execute positioned $(p1_build_plate_x) $(p1_build_plate_y) $(p1_build_plate_z) run clone ~ ~ ~ ~20 ~11 ~26 $(p1_cache_x) $(p1_cache_y) $(p1_cache_z) strict
+
+# Update HUD Block Count
+function demolition:zzz/game/demolition/block_count with storage demolition:data
+function demolition:zzz/hud/update

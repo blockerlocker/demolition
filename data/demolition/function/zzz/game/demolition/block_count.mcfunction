@@ -1,2 +1,2 @@
-$execute positioned $(p1_build_plate_x) $(p1_build_plate_y) $(p1_build_plate_z) run data modify storage demolition:temp all.p1_blocks set compute default integer demolition:block_count
-$execute positioned $(p2_build_plate_x) $(p2_build_plate_y) $(p2_build_plate_z) run data modify storage demolition:temp all.p2_blocks set compute default integer demolition:block_count
+$execute positioned $(p1_build_plate_x) $(p1_build_plate_y) $(p1_build_plate_z) run data modify storage demolition:demolition all.p1_blocks set compute default integer demolition:block_count
+$execute positioned $(p2_build_plate_x) $(p2_build_plate_y) $(p2_build_plate_z) run data modify storage demolition:demolition all.p2_blocks set compute default integer demolition:block_count
