@@ -12,6 +12,8 @@ execute if predicate {type:entity_properties,entity:this,predicate:{flags:{is_on
 execute if entity @s[tag=demolition_real_tnt] run summon tnt ~ ~ ~ {fuse:0}
 execute unless entity @s[tag=demolition_real_tnt] run playsound entity.generic.explode master @a ~ ~ ~ 5 0.8
 
+scoreboard players set $cooldown demolition_timer 3
+
 kill @s
 
 execute as @e[type=item_display,tag=demolition_tnt_display] unless predicate {type:entity_properties,entity:this,predicate:{vehicle:{}}} run kill @s

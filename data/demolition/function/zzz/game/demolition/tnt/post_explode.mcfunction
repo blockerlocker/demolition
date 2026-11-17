@@ -25,4 +25,4 @@ execute if data storage demolition:demolition {all:{turn:p2}} if data storage de
 execute if data storage demolition:demolition {all:{turn:p2}} unless data storage demolition:temp all{team_1_count:1} run tellraw @a [{text:"",color:yellow},{text:"Team 1",color:red}," lost ",{storage:"demolition:temp",nbt:"all.p1_lost_blocks"}," blocks, and has ",{storage:"demolition:demolition",nbt:"all.p1_blocks"}," remaining."]
 
 data merge storage demolition:demolition {all:{cooldown:turn_cycle}}
-scoreboard players set $cooldown demolition_timer 40
+scoreboard players set $cooldown demolition_timer 30
