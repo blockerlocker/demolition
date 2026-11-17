@@ -9,7 +9,7 @@ gamerule locator_bar false
 gamerule show_advancement_messages false
 gamerule random_tick_speed 0
 
-###gamerule send_command_feedback false
+gamerule send_command_feedback false
 
 team add demolition_team_1
 team add demolition_team_2
