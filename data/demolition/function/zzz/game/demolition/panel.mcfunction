@@ -31,8 +31,7 @@ execute if data storage demolition:demolition all{turn:p1} run data modify stora
 execute if data storage demolition:demolition all{turn:p2} run data modify storage demolition:temp all.sender set value p2
 execute if data storage demolition:demolition all{turn:p2} run data modify storage demolition:temp all.receiver set value p1
 
-execute at @s positioned ~ ~.5 ~ run tag @n[type=text_display,tag=demolition_icon] add demolition_queue_state_change
-data merge entity @n[type=text_display,tag=demolition_queue_state_change] {text:{sprite:"hud/locator_bar_dot/default_3",atlas:gui,color:gold},transformation:{scale:[2.8125,2.8125,0],translation:[-0.0703125,-0.421875,0]}}
+execute at @s positioned ~ ~.5 ~ as @n[type=text_display,tag=demolition_icon] at @s run function demolition:zzz/game/demolition/panel_icon/queue_state_change
 
 function demolition:zzz/game/demolition/tnt/spawn with storage demolition:temp all
 

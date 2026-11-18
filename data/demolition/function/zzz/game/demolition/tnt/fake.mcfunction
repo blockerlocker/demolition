@@ -1,1 +1,1 @@
-summon armor_stand ~ ~ ~ {attributes:[{id:scale,base:4}],Invisible:true,Invulnerable:true,Tags:[demolition_tnt],Passengers:[{id:item_display,transformation:[0f,0f,0f,0f,0f,0f,0f,-6.25f,0f,0f,0f,0f,0f,0f,0f,1f],interpolation_duration:20,Tags:[demolition_tnt_display]}]}
+summon armor_stand ~ ~ ~ {attributes:[{id:scale,base:4}],Invisible:true,Invulnerable:true,Tags:[demolition_tnt],Passengers:[{id:item_display,item:{id:tnt},transformation:[0f,0f,0f,0f,0f,0f,0f,-6.25f,0f,0f,0f,0f,0f,0f,0f,1f],interpolation_duration:20,Tags:[demolition_tnt_display]}]}

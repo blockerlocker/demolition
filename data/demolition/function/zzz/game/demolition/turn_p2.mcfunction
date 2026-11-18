@@ -2,5 +2,7 @@ data merge storage demolition:demolition {all:{turn:p2}}
 
 execute store result storage demolition:temp all.team_count int 1 if entity @a[team=demolition_team_2]
 
-execute if data storage demolition:temp all{team_count:1} run tellraw @a [{selector:"@p[team=demolition_team_2]",color:blue},{text:"'s "},{text:"turn",color:yellow}]
-execute unless data storage demolition:temp all{team_count:1} run tellraw @a [{text:"Team 2's ",color:blue},{text:"turn",color:yellow}]
+data modify storage demolition:temp all.team_name set value {text:"Team 2",color:blue}
+execute if data storage demolition:temp all{team_count:1} run data modify storage demolition:temp all.team_name set value {selector:"@p[team=demolition_team_2]",color:blue}
+
+tellraw @a [{storage:"demolition:temp",nbt:"all.team_name",interpret:true},{text:"'s "},{text:"turn",color:yellow}]

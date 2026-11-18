@@ -1,0 +1,1 @@
+function demolition:zzz/game/demolition/begin

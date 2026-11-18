@@ -8,8 +8,7 @@ gamemode creative @a[tag=demolition_active_player]
 
 execute as @a at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ 2 2
 execute as @a at @s run playsound entity.generic.explode master @s ~ ~ ~ 2 1
-title @a title ""
-title @a subtitle {text:"Demolition!",color:green}
+function demolition:zzz/notif/subtitle {subtitle:'{text:"Demolition!",color:green}'}
 
 execute as @a[tag=demolition_active_player] run attribute @s block_interaction_range modifier add demolition:no_building -2000 add_value
 clear @a
