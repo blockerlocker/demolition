@@ -1,6 +1,13 @@
 # Unready team if they change their build.
 execute if data storage demolition:building {all:{p1_ready:true}} run function demolition:zzz/game/building/p1_unready
 
+# Warn players if they have an illegal block in their build
+execute if predicate demolition:build/has_unblastable_block as @a[team=demolition_team_1] at @s run function demolition:zzz/notif/actionbar_red {text:"You cannot have un-blastable blocks in your build!"}
+execute if predicate demolition:build/has_waterlogged_block as @a[team=demolition_team_1] at @s run function demolition:zzz/notif/actionbar_red {text:"You cannot have waterlogged blocks in your build!"}
+
+# Remove illegal blocks
+$execute positioned $(p1_build_plate_x) $(p1_build_plate_y) $(p1_build_plate_z) run fill ~ ~ ~ ~20 ~11 ~26 air replace #demolition:unblastable strict
+
 # Get build stats
 data modify storage demolition:building all.p1_blast set compute default float demolition:total_blast_resistance
 data modify storage demolition:building all.p1_blocks set compute default integer demolition:block_count
@@ -25,10 +32,6 @@ execute if predicate demolition:build/p1_exceed_cells run scoreboard players dis
 
 # Warn player if any of their stats are over-limit
 execute if predicate {type:any_of,terms:["demolition:build/p1_exceed_blast","demolition:build/p1_exceed_blocks","demolition:build/p1_exceed_cells"]} unless predicate demolition:build/has_unblastable_block as @a[team=demolition_team_1] at @s run function demolition:zzz/notif/actionbar_red {text:"Remove blocks to bring down your Build Stats."}
-
-# Warn players if they have an illegal block in their build
-execute if predicate demolition:build/has_unblastable_block as @a[team=demolition_team_1] at @s run function demolition:zzz/notif/actionbar_red {text:"You cannot have un-blastable blocks in your build!"}
-execute if predicate demolition:build/has_waterlogged_block as @a[team=demolition_team_1] at @s run function demolition:zzz/notif/actionbar_red {text:"You cannot have waterlogged blocks in your build!"}
 
 # Update cached build
 $execute positioned $(p1_build_plate_x) $(p1_build_plate_y) $(p1_build_plate_z) run clone ~ ~ ~ ~20 ~11 ~26 $(p1_cache_x) $(p1_cache_y) $(p1_cache_z) strict

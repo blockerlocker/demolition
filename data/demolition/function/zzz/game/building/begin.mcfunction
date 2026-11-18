@@ -36,4 +36,6 @@ scoreboard players display numberformat $blast demolition_p2_stats fixed [{text:
 scoreboard players display numberformat $blocks demolition_p2_stats fixed [{text:"0",color:aqua,shadow_color:[0,0.15,0.15,1]},"/",{storage:"demolition:settings",nbt:"block_limit",plain:true}]
 scoreboard players display numberformat $cells demolition_p2_stats fixed [{text:"0",color:aqua,shadow_color:[0,0.15,0.15,1]},"/",{storage:"demolition:settings",nbt:"cell_limit",plain:true}]
 
+function demolition:zzz/game/building/restore_moving_piston with storage demolition:data
+
 execute as @a run attribute @s block_interaction_range modifier remove demolition:no_building
