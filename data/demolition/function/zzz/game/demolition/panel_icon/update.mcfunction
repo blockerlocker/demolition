@@ -1,6 +1,6 @@
 tag @s remove demolition_queue_state_change
 
-execute unless data storage demolition:temp all{hit:true} run data merge entity @s {text:{sprite:"notification/more",atlas:gui,color:dark_green},transformation:{scale:[2.8125,2.8125,0],translation:[-0.0703125,-0.421875,0]}}
+execute unless data storage demolition:temp all{hit:true} run data merge entity @s {text:{sprite:"notification/more",atlas:gui,color:dark_green},transformation:{scale:[2.5,2.5,0],translation:[-0.0625,-0.375,0]}}
 execute if data storage demolition:temp all{hit:true} run data merge entity @s {text:{sprite:"notification/more",atlas:gui,color:white},transformation:{scale:[2.5,2.5,0],translation:[-0.0625,-0.375,0]}}
 
 data modify storage demolition:temp all.total_destroyed set value 0

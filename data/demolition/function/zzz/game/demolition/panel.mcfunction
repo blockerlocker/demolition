@@ -4,6 +4,7 @@ execute on target if data storage demolition:demolition all{turn:p1} if entity @
 execute on target if data storage demolition:demolition all{turn:p2} if entity @s[team=demolition_team_1] run return run playsound block.note_block.bass master @a
 
 playsound ui.button.click master @a
+execute as @a at @s run playsound entity.tnt.primed master @s ~ ~ ~ 2 1
 
 data modify storage demolition:temp all.target_cell set from entity @s data.demolition.button
 
